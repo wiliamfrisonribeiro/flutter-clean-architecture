@@ -1,4 +1,5 @@
 import 'package:app_clean/reminders/domain/repositories/reminder_repository.dart';
+import 'package:app_clean/reminders/domain/usecases/get_reminder.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mockito/mockito.dart';
 
@@ -10,6 +11,19 @@ void main() {
 
   setUp(() {
     repository = MockReminderRepository();
-    usecase = GetReminder();
+    usecase = GetReminder(repository);
   });
+
+  test('should return an entity reminder', () {
+
+    //arrage
+
+    //acts
+
+
+    //asserts
+  });
+
+
+
 }
